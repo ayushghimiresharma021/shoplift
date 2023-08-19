@@ -11,7 +11,7 @@ const user = require('./controller/User')
 
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: process.env.LOCALHOST,
     credentials: true,
 
 }))
